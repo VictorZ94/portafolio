@@ -1,0 +1,273 @@
+/***  initial styles ***/
+:root {
+  --color-primary: #e91e63;
+  --color-secondary: rgba(149,52,31,1);
+  --color-black:  #090909;
+  --color-white: #ffffff;
+  --color-hover: #FF8080; /* FD5D5D */
+  --color-muted: #999999;
+
+  /** MOTION **/
+  --transition-duration: .5s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e3e3e3!important;
+  color: #4e4e4e;
+}
+
+/*** 1. background image styles ***/
+
+.bg-image {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("../assets/intro-bg-primary.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+/*** End background image styles ***/
+
+/*** 2. Header styles ***/
+
+.icon-nav {
+  background: var(--color-primary);
+  background-clip: text;
+  color: transparent;
+}
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-icon {
+  cursor: pointer;
+  padding: 2.5rem 0;
+  position: relative;
+  user-select: none;
+  display: none;
+}
+
+nav .menu-icon .navicon {
+  background-color: var(--color-white);
+  display: inline-block;
+  width: 2rem;
+  height: .2rem;
+  position: relative;
+  transition: background .5s ease-out;
+}
+
+nav .menu-icon .navicon::before, nav .menu-icon .navicon::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--color-white);
+  transition: all .5s ease-out;
+}
+
+nav .menu-icon .navicon::before {
+  top: .7rem;
+}
+
+nav .menu-icon .navicon::after {
+  top: -.7rem;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon::before {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon::after {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background-color: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon::before,
+nav .menu-btn:checked ~ .menu-icon .navicon::after {
+  top: 0;
+}
+
+/*** End header styles ***/
+
+/*** 
+ *
+ * 3. Nav items styles
+ *
+ ***/
+
+nav .nav-item {
+  display: inline-block;
+  margin: 0.8rem;
+  position: relative;
+}
+
+nav .nav-item .nav-link.active::before,
+nav .nav-item:hover .nav-link::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+}
+
+@media only screen and (max-width: 992px) {
+
+  nav .icon-nav {
+    font-size: 1.4rem;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-logo {
+    flex-basis: 85%;
+  }
+
+  .bg-image {
+    height: 90vh;
+  }
+
+  .intro .intro-title {
+    font-size: 3.25rem;
+  }
+
+  .intro .intro-subtitle {
+    font-size: 1.5rem;
+  }
+
+  nav .container ul {
+    display: none !important;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav .menu-btn:checked ~ ul {
+    display: flex !important;
+    transition: display 5s ease-in-out;
+  }
+
+  nav .menu-btn:checked ~ ul {
+    display: flex !important;
+    transition: display 5s ease-in-out;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/*** End nav items styles ***/
+/* 
+.intro {
+  margin-top: 8rem;
+} */
+
+.intro .intro-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.intro .intro-subtitle {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.description {
+  font-size: 20px;
+  color: #4e4e4e;
+}
+
+.title {
+  font-size: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.title > span::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 30%;
+  width: 40%;
+  height: .2rem;
+  background-color: var(--color-primary);
+}
+
+.title:hover > span::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0%;
+  width: 100%;
+  height: .2rem;
+  background-color: var(--color-primary);
+  transition: all 0.5s ease-in-out;
+}
+
+/*** 
+ *
+ * 5. Scrollbar styles
+ *
+ ***/
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(191,47,47);
+  background: radial-gradient(circle, rgba(149,52,31,1) 40%, rgba(78,71,69,1) 100%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: radial-gradient(#e66465, #000);
+  opacity: 0.5; */
+  background: rgb(191,47,47);
+  background: radial-gradient(circle, rgba(149,52,31,1) 100%, rgba(78,71,69,1) 12%);
+  transition: background 0.5s ease-in-out;
+}
+
+/* End scrollbar styles */

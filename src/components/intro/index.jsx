@@ -8,7 +8,7 @@ const IntroSection = () => {
   const [t] = useTranslation("global");
 
   return (
-    <div className="bg-image" id={t("nav.home")}>
+    <div className="bg-image" id={t("nav.home").toLowerCase()}>
       <Container className="d-flex justify-content-between align-items-center h-100">
         <section className="intro text-white">
           <h1 className="intro-title mb-4">{t("title")}</h1>

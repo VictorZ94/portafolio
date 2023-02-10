@@ -1,26 +1,32 @@
 /***  initial styles ***/
 :root {
   --color-primary: #e91e63;
-  --color-secondary: rgba(149,52,31,1);
+  --color-secondary: #690E2C;
   --color-black:  #090909;
   --color-white: #ffffff;
-  --color-hover: #FF8080; /* FD5D5D */
+  --color-hover: #EC6592; /* FD5D5D */
   --color-muted: #999999;
+
+  --header-height: 66px;
 
   /** MOTION **/
   --transition-duration: .5s;
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
+[id] {
+  scroll-margin-top: calc(var(--header-height) + 2rem);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #e3e3e3!important;
@@ -213,11 +219,14 @@ nav .nav-item:hover .nav-link::before {
 .title {
   font-size: 2.5rem;
   position: relative;
-  cursor: pointer;
   user-select: none;
 }
+.title ~ p span {
+  user-select: none;
+  letter-spacing: 1px;
+}
 
-.title > span::before {
+.title ~ p span::before {
   content: "";
   position: absolute;
   bottom: -12px;
@@ -265,7 +274,7 @@ nav .nav-item:hover .nav-link::before {
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #000, transparent);
+  background: linear-gradient(to top, #e91e63, transparent);
   z-index: 2;
   transition: 0.5s;
   opacity: 0;
@@ -318,3 +327,6 @@ nav .nav-item:hover .nav-link::before {
   text-decoration: none;
 }
 
+.vertical-timeline-element-top {
+  border-top: 3px solid var(--color-primary);
+}

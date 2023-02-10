@@ -13,13 +13,12 @@ const PortafolioSection = () => {
   const [t] = useTranslation("global");
 
   return (
-    <section id={t("nav.project")}>
+    <section className="bg-white mt-2 pt-2" id={t("nav.project").toLowerCase()}>
       <Container className='mt-5 text-center'>
-        <h5 className="title">
-          <span className="position-relative">
-            {t("nav.project")}
-          </span>
-        </h5>
+        <h5 className="title">{t("nav.project")}</h5>
+        <p>
+          <span className="position-relative fw-light">Mis proyectos destacados</span>
+        </p>
         <div className="projects mt-5">
           <div className="single-project">
             <img src={image1} alt="First project" width={280} height={350}/>

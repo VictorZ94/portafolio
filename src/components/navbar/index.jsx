@@ -64,7 +64,7 @@ function NavBar() {
               className={`${isActiveNav === t("nav.about").toLowerCase() ? "active" : ""} nav-link d-block py-2`}
               onClick={() => setIsActiveNav(t("nav.about").toLowerCase())}
             >
-                {t("nav.about")}
+              {t("nav.about")}
             </a>
           </li>
           <li className="nav-item">
@@ -91,7 +91,7 @@ function NavBar() {
               className={`${isActiveNav === t("nav.education").toLowerCase() ? "active" : ""} nav-link d-block py-2`}
               onClick={() => setIsActiveNav(t("nav.education").toLowerCase())}
             >
-                {t("nav.education")}
+              {t("nav.education")}
             </a>
           </li>
           <li className="nav-item">

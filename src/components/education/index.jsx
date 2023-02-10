@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Briefcase, Star } from 'react-feather';
 
-const ExperienceSection = () => {
+const EducationComponent = () => {
   const [t] = useTranslation("global");
 
   const iconStyledComponent = {
@@ -34,12 +34,6 @@ const ExperienceSection = () => {
             <h3 className="vertical-timeline-element-title">Desarrollador React</h3>
             <h4 className="vertical-timeline-element-subtitle">TeamClass</h4>
             <p className='pb-4'>Escribí código que impactaba directamente producción usando React para las web de uso interno y Nextjs para la web principal.</p>
-            {/* <ul className="text-start">
-              <li>Apoyé el desarrollo y mejoras de la interface de usuario (UI) de las páginas web internas con React y la web principal con Nextjs.</li>
-              <li>Implementé nuevos formularios para el ingreso de datos claves del negocio, permitiendo su visualización, eliminación y actualización. usando Apollo Client y GraphQL</li>
-              <li>Refactoricé, mejoré, probé e implementé código en la web usando el patrón de arquitectura diseño átomico estructurando componentes en React.</li>
-              <li>Consumir RestAPI para diseñar e implementar el proceso de validación de direcciones en EEUU e Internacionales, mejorando sustacialmente los envíos de los kits.</li>
-            </ul> */}
           </VerticalTimelineElement>
           <VerticalTimelineElement
             date="Octubre 2021 - Diciembre 2021"
@@ -53,18 +47,6 @@ const ExperienceSection = () => {
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2008 - 2010"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<Briefcase />}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-            <p>
-              User Experience, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
             icon={<Star />}
           />
@@ -74,6 +56,6 @@ const ExperienceSection = () => {
   )
 }
 
-ExperienceSection.propTypes = {}
+EducationComponent.propTypes = {}
 
-export default ExperienceSection
+export default EducationComponent;

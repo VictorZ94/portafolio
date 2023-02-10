@@ -207,6 +207,7 @@ nav .nav-item:hover .nav-link::before {
 .description {
   font-size: 20px;
   color: #4e4e4e;
+  font-weight: 300;
 }
 
 .title {
@@ -237,37 +238,83 @@ nav .nav-item:hover .nav-link::before {
   transition: all 0.5s ease-in-out;
 }
 
-/*** 
- *
- * 5. Scrollbar styles
- *
- ***/
-
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+.projects .single-project {
+  width: 360px;
+  height: 400px;
+  padding: 24px;
+  background: #FFF;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition:  .6s ease-out;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  margin: 24px 0;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgb(191,47,47);
-  background: radial-gradient(circle, rgba(149,52,31,1) 40%, rgba(78,71,69,1) 100%);
+.projects .single-project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, transparent);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  /* background: radial-gradient(#e66465, #000);
-  opacity: 0.5; */
-  background: rgb(191,47,47);
-  background: radial-gradient(circle, rgba(149,52,31,1) 100%, rgba(78,71,69,1) 12%);
-  transition: background 0.5s ease-in-out;
+.projects .single-project:hover {
+  transform: translateY(15px);
 }
 
-/* End scrollbar styles */
+.projects .single-project:hover::before {
+  opacity: 1;
+}
+
+.projects .single-project:hover .project-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.single-project img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.single-project .project-body {
+  position: relative;
+  z-index: 3;
+  color: #FFF;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+
+.single-project .project-body h2 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 3px;
+}
+
+.single-project .project-body a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  margin: 0 5px;
+  text-decoration: none;
+}
+

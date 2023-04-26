@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.0cda97ac.css",
+    "main.css": "/portafolio/static/css/main.c795b358.css",
     "main.js": "/portafolio/static/js/main.b1e9a191.js",
     "static/media/intro-bg2.jpg": "/portafolio/static/media/intro-bg2.193d1171cd26436c60a4.jpg",
     "static/media/preview-smiling-school.png": "/portafolio/static/media/preview-smiling-school.7713267d7f2aeeaf9243.png",
@@ -18,11 +18,11 @@
     "static/media/html5-icon.svg": "/portafolio/static/media/html5-icon.d0addc05618b04fad8a920667bd781d7.svg",
     "index.html": "/portafolio/index.html",
     "static/media/django-icon.svg": "/portafolio/static/media/django-icon.83a208fafe246e792c923883a23753cf.svg",
-    "main.0cda97ac.css.map": "/portafolio/static/css/main.0cda97ac.css.map",
+    "main.c795b358.css.map": "/portafolio/static/css/main.c795b358.css.map",
     "main.b1e9a191.js.map": "/portafolio/static/js/main.b1e9a191.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cda97ac.css",
+    "static/css/main.c795b358.css",
     "static/js/main.b1e9a191.js"
   ]
 }

@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.c795b358.css",
-    "main.js": "/portafolio/static/js/main.b1e9a191.js",
+    "main.js": "/portafolio/static/js/main.7f45a75a.js",
     "static/media/intro-bg2.jpg": "/portafolio/static/media/intro-bg2.193d1171cd26436c60a4.jpg",
     "static/media/preview-smiling-school.png": "/portafolio/static/media/preview-smiling-school.7713267d7f2aeeaf9243.png",
     "static/media/intro-bg4.jpg": "/portafolio/static/media/intro-bg4.c3791ec1d46a63d9efb3.jpg",
     "static/media/intro-bg5.jpg": "/portafolio/static/media/intro-bg5.bdbc2b99200c7242d092.jpg",
-    "static/media/intro-bg.jpg": "/portafolio/static/media/intro-bg.73c37175ba0b271d7678.jpg",
+    "static/media/buscador-pelis.png": "/portafolio/static/media/buscador-pelis.96d60bfc4ff65186336d.png",
     "static/media/api-icon.png": "/portafolio/static/media/api-icon.c4ef81ef0d29915b4fc9.png",
     "static/media/python-icon.svg": "/portafolio/static/media/python-icon.3bd37691aea3e8aea660ee05c50d27fd.svg",
     "static/media/mongodb-icon.svg": "/portafolio/static/media/mongodb-icon.b14f79af406efe26fd9d003192f7fbd0.svg",
@@ -19,10 +19,10 @@
     "index.html": "/portafolio/index.html",
     "static/media/django-icon.svg": "/portafolio/static/media/django-icon.83a208fafe246e792c923883a23753cf.svg",
     "main.c795b358.css.map": "/portafolio/static/css/main.c795b358.css.map",
-    "main.b1e9a191.js.map": "/portafolio/static/js/main.b1e9a191.js.map"
+    "main.7f45a75a.js.map": "/portafolio/static/js/main.7f45a75a.js.map"
   },
   "entrypoints": [
     "static/css/main.c795b358.css",
-    "static/js/main.b1e9a191.js"
+    "static/js/main.7f45a75a.js"
   ]
 }

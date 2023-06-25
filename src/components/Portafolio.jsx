@@ -5,6 +5,7 @@ import { Link, Search } from 'react-feather';
 import previewSmilingSchool from "../assets/preview-smiling-school.png"
 import previewMoviesSeach from "../assets/buscador-pelis.png"
 import image3 from "../assets/intro-bg2.jpg"
+import previewChat from "../assets/chat-clone.png"
 
 const PortafolioSection = () => {
   const [t] = useTranslation("global");
@@ -68,15 +69,25 @@ const PortafolioSection = () => {
             </div>
           </div>
           <div className="single-project">
-            <img src={image3} alt="First project"  width={280} height={350}/>
+            <img src={previewChat} alt="First project"  width={280} height={350}/>
             <div className="project-body">
-              <h2>Project description</h2>
-              <p>Project front-end</p>
+              <h2>Chat mock ChatGPT</h2>
+              <p>Django Backend project</p>
               <p>
-                <a href="#">
+                <a
+                  href="https://github.com/VictorZ94/chatgpt-clone.git"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Github link - Chat mock ChatGPT"
+                >
                   <Search color="white" width={18}/>
                 </a>
-                <a href="#">
+                <a
+                  href="https://chatgpt-mock-1b23c73243b8.herokuapp.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Chat mock ChatGPT"
+                >
                   <Link color="white" width={18}/>
                 </a>
               </p>

@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Intro",
+    "about": "Sobre mí",
+    "project": "Proyectos",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "blog": "Blog"
+  },
+  "title": "Hola!, Soy Víctor Zuluaga",
+  "subtitle": "Soy un",
+  "step": {
+    "item1": "Desarrollador Web",
+    "item2": "Desarrollador Front-end",
+    "item3": "Desarrollador Django",
+    "item4": "Desarrollador React"
+  }
+}

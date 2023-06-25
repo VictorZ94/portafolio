@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "project": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "blog": "Blog"
+  },
+  "title": "Víctor Zuluaga",
+  "subtitle": "I'm a",
+  "step": {
+    "item1": "Web Developer",
+    "item2": "Front-end Developer",
+    "item3": "Django Developer",
+    "item4": "React Developer"
+  }
+}

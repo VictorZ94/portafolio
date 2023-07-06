@@ -1,7 +1,7 @@
 import React from "react"
 
 const CardBlog = ({ title, content, publishedDate, blogImge, url  }) => (
-    <div className="card mx-sm-2 mx-md-5 mt-5 mb-3">
+    <div className="card mx-sm-2 mx-md-5 mt-5 mb-3 animate__animated animate__zoomIn">
         <div className="row g-0">
         <div className="col-md-4">
             <img

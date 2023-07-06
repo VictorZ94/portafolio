@@ -16,8 +16,6 @@ const Skills = () => {
     }
   }, [skills]) 
 
-  console.log(filteredSkills)
-
   return (
     <section id={t("nav.skills").toLowerCase()}>
       <Container className='mt-5 text-center'>

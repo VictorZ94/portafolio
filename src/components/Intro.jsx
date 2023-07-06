@@ -16,7 +16,7 @@ const IntroSection = () => {
         <section className="intro text-white">
           <p className='mb-0 intro-subtitle'>Hello, I'm</p>
           <h1 className="intro-title">{t("title")}</h1>
-          <p className='intro-desc'>Web Developer | Front-end developer React</p>
+          <p className='intro-desc'>Web Developer | Python and React developer</p>
         </section>
       </Container>
     </section>

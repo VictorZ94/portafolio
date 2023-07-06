@@ -357,3 +357,7 @@ nav .nav-item .nav-link.active {
   background-color: var(--color-primary) !important;
   color: white !important;
 }
+
+.text-custom-primary {
+  color: var(--color-primary) !important;
+}

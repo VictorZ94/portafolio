@@ -1,94 +1,105 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
+import React from "react";
+import Container from "react-bootstrap/Container";
 import { useTranslation } from "react-i18next";
-import { Link, Search } from 'react-feather';
-import previewSmilingSchool from "../assets/preview-smiling-school.png"
-import previewMoviesSeach from "../assets/buscador-pelis.png"
-import image3 from "../assets/intro-bg2.jpg"
-import previewChat from "../assets/chat-clone.png"
+import { Link, Search } from "react-feather";
+import previewSmilingSchool from "../assets/preview-smiling-school.png";
+import previewMoviesSeach from "../assets/buscador-pelis.png";
+import Wallet from "../assets/wallet.png";
 
 const PortafolioSection = () => {
   const [t] = useTranslation("global");
 
   return (
     <section className="mt-2 pt-2" id={t("nav.project").toLowerCase()}>
-      <Container className='mt-5 text-center'>
-        <h5 className="title"><span className='color-primary'>My{" "}</span> {t("nav.project")}</h5>
+      <Container className="mt-5 text-center">
+        <h5 className="title">
+          <span className="color-primary">My </span> {t("nav.project")}
+        </h5>
         <p>
           <span className="position-relative fw-light">featured projects</span>
         </p>
         <div className="projects mt-5">
           <div className="single-project">
-            <img src={previewSmilingSchool} alt="First project" width={280} height={350}/>
+            <img
+              src={previewSmilingSchool}
+              alt="First project"
+              width={280}
+              height={350}
+            />
             <div className="project-body">
               <h2>Smiling School</h2>
               <p>Front-end project</p>
               <p>
                 <a
-                  href="https://github.com/VictorZ94/holberton-smiling-school-javascript"
+                  href="https://github.com/VictorZ94/Smilling-school"
                   target="_blank"
                   rel="noreferrer"
                   title="Repositorio"
                 >
-                  <Search  color="white" width={18}/>
+                  <Search color="white" width={18} />
                 </a>
                 <a
-                  href="https://victorz94.github.io/holberton-smiling-school-javascript/homepage.html"
+                  href="https://victorz94.github.io/Smilling-school/homepage.html"
                   target="_blank"
                   rel="noreferrer"
                   title="Smiling School website"
                 >
-                  <Link color="white" width={18}/>
+                  <Link color="white" width={18} />
                 </a>
               </p>
             </div>
           </div>
           <div className="single-project">
-            <img src={previewMoviesSeach} alt="First project"  width={280} height={350}/>
+            <img
+              src={previewMoviesSeach}
+              alt="First project"
+              width={280}
+              height={350}
+            />
             <div className="project-body">
               <h2>Movies search</h2>
               <p>React frontend project</p>
               <p>
-                <a 
+                <a
                   href="https://github.com/VictorZ94/platzi-student-coding/tree/main/05-buscador-peliculas"
                   target="_blank"
                   rel="noreferrer"
                   title="Github link"
                 >
-                  <Search color="white" width={18}/>
+                  <Search color="white" width={18} />
                 </a>
-                <a 
+                <a
                   href="https://645826179d0f6734c31f2315--chipper-cupcake-8c3780.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                   title="Movies search"
                 >
-                  <Link color="white" width={18}/>
+                  <Link color="white" width={18} />
                 </a>
               </p>
             </div>
           </div>
           <div className="single-project">
-            <img src={previewChat} alt="First project"  width={280} height={350}/>
+            <img src={Wallet} alt="First project" width={280} height={350} />
             <div className="project-body">
-              <h2>Chat mock ChatGPT</h2>
-              <p>Django Backend project</p>
+              <h2>Digital wallet</h2>
+              <p>Django Backend & React Frontend</p>
               <p>
                 <a
-                  href="https://github.com/VictorZ94/chatgpt-clone.git"
+                  href="https://github.com/No-Country/c13-30-t-python"
                   target="_blank"
                   rel="noreferrer"
                   title="Github link - Chat mock ChatGPT"
                 >
-                  <Search color="white" width={18}/>
+                  <Search color="white" width={18} />
                 </a>
                 <a
-                  href="https://chatgpt-mock-1b23c73243b8.herokuapp.com"
+                  href="https://digital-wallet.victorzuluaga.com/"
                   target="_blank"
                   rel="noreferrer"
                   title="Chat mock ChatGPT"
                 >
-                  <Link color="white" width={18}/>
+                  <Link color="white" width={18} />
                 </a>
               </p>
             </div>
@@ -96,9 +107,9 @@ const PortafolioSection = () => {
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-PortafolioSection.propTypes = {}
+PortafolioSection.propTypes = {};
 
-export default PortafolioSection
+export default PortafolioSection;
